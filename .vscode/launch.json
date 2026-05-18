@@ -1,0 +1,58 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Cortex Debug - STM32F401",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/vscblink.elf",
+            "preLaunchTask": "cmake: build",
+            "armToolchainPath": "${config:cortex-debug.armToolchainPath}",
+            "searchDir": [
+                "${workspaceFolder}",
+                "${config:cortex-debug.searchDir}"
+            ],
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "openocdPath": "${config:cortex-debug.openocdPath}",
+            "svdFile": "",
+            "device": "STM32F401xE",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": false,
+            "logging": {
+                "level": "warn",
+                "showTimestamps": true
+            }
+        },
+        {
+            "name": "Cortex Debug - STM32F401 (Attach)",
+            "type": "cortex-debug",
+            "request": "attach",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/vscblink.elf",
+            "armToolchainPath": "${config:cortex-debug.armToolchainPath}",
+            "searchDir": [
+                "${workspaceFolder}",
+                "${config:cortex-debug.searchDir}"
+            ],
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "openocdPath": "${config:cortex-debug.openocdPath}",
+            "svdFile": "",
+            "device": "STM32F401xE",
+            "showDevDebugOutput": false,
+            "logging": {
+                "level": "warn",
+                "showTimestamps": true
+            }
+        }
+    ]
+}
