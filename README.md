@@ -1,6 +1,6 @@
 This is a guide (and test) for getting started with advanced debugging with cortex-debug extension which allows you to debug things like registers values etc directly within VSCode, bcuz the default CubeIDE extension doesn't allow that much like the true CubeIDE.
 
-To get started, ensure that cubemx and openocd are installed, download cubemx from ST's site. Read the guide for downloading openocd in the repo. 
+To get started, ensure that cubemx and openocd are installed, download cubemx from ST's site. Read the guide for downloading OpenOcd in the repo. (If not, installing them is also in the complete guide from scratch file, that includes the complete start-to-finish setup).
 
 For the complete workflow, read the complete guide from scratch file. 
 Save the launch, tasks, and settings JSON files if you like.
